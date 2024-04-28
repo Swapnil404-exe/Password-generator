@@ -1,0 +1,30 @@
+/* Specify the background image URL and other styles here */
+body {
+    background-image: url('./Background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#main-app{
+  background-color: rgba(73, 79, 154, 0.156); /* Transparent white background */
+  backdrop-filter: blur(300px);
+  /* background-image: linear-gradient(45deg, #ff0000, #00ff00); Gradient */
+}
+
+#password, #length{
+  background-color: rgba(56, 50, 79, 0.263);
+  color: white;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+

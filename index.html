@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./favicon.icon" type="image/x-icon">
+</head>
+<body class="bg-gray-100 h-screen flex justify-center items-center">
+  <div id="main-app" class="max-w-md w-full p-4 bg-white rounded  ">
+    <!-- <h1 class="text-2xl font-bold mb-4 text-white flex justify-center text-center">Password Generator</h1> -->
+    <div id="heading" class="flex justify-center">
+    <h1 class="0 text-white text-2xl flex justify-center font-bold rounded-md
+    ">Password</h1><h1 class="text-gray-900 mr-2 font-bold text-2xl bg-pink-500 rounded-md">hub</h1>
+    </div>
+    <div class="mb-4">
+      <div class="flex items-center">
+        <label for="length" class="mr-2 text-white text-l">Password Length: <span id="lengthValue">8</span></label>
+        <input type="range" id="length" name="length" min="8" max="40" class="w-64 h-6 bg-gray-300 rounded-full  outline-none accent-pink-500 cursor-pointer" value="8" >
+      </div>
+    </div>
+    <div class="mb-4" id="checkboxes " class="">
+      <input type="checkbox" id="uppercase" class="mr-2 text-white  accent-pink-500 bg-white ">
+      <label for="uppercase" class="text-l text-white">Uppercase</label>
+    </div>
+    <div class="mb-4">
+      <input type="checkbox" id="lowercase" class="mr-2 text-white accent-pink-500 ">
+      <label for="lowercase" class="text-l text-white">Lowercase</label>
+    </div>
+    <div class="mb-4">
+      <input type="checkbox" id="numbers" class="mr-2 text-white accent-pink-500">
+      <label for="numbers" class="text-l text-white">Numbers </label>
+    </div>
+    <div class="mb-4">
+      <input type="checkbox" id="symbols" class="mr-2 text-white accent-pink-500">
+      <label for="symbols" class="text-l text-white">Symbols </label>
+  </div>
+    <label for="password" class="block text-white">Generated Password:</label>
+    <textarea id="password" class="w-full p-2  rounded-md text-white" rows="1" readonly></textarea>
+    <div class="flex flex-row gap-2">
+    <button id="generate" class="w-full bg-pink-500 text-white py-2 rounded-md font-bold mt-2">Generate </button>
+    <button id="copy" class="w-full bg-pink-500 text-white py-2 rounded-md font-bold mt-2">Copy </button>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
